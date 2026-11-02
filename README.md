@@ -70,8 +70,6 @@ Patient references are used to associate clinical resources with the correspondi
 
 ## Clinical Data Validation
 
-Clinical data quality is an important consideration when integrating heterogeneous healthcare information systems.
-
 The dashboard implements basic data quality and plausibility checks to identify potentially unreliable measurements.
 
 **Implemented Checks**
@@ -80,10 +78,6 @@ The dashboard implements basic data quality and plausibility checks to identify 
 - Parameter-specific plausibility thresholds
 - Identification of missing or inconsistent measurement units
 - Classification of measurements according to defined validation rules
-
-For example, an illustrative heart rate validation range of 0–300 beats per minute is used to flag values outside the configured boundaries.
-
-These thresholds are intended to detect potentially invalid or inconsistent data rather than define normal physiological reference ranges.
 
 **Important:** Passing a plausibility check does not establish that a measurement is clinically normal or medically appropriate. The dashboard is an educational prototype and is not intended for clinical decision-making.
 
@@ -196,10 +190,8 @@ The tests focus on selected validation functions and do not constitute comprehen
 
 ## Data Privacy and Intended Use
 
-This project is intended exclusively for educational purposes and technical demonstration.
+This project is intended exclusively for my own educational purposes and technical demonstration.
 
-The local dataset contains synthetic patient records generated with Synthea. The API integration uses a public FHIR test server.
-
-No real patient-identifiable information should be uploaded to the application or submitted to the public test server.
+The local dataset contains synthetic patient records generated with Synthea. The API integration uses a public FHIR test server. No real patient-identifiable information should be uploaded to the application or submitted to the public test server.
 
 **This dashboard is not a certified medical device and must not be used for diagnosis, treatment decisions, or direct patient care.**
